@@ -2,11 +2,161 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Сладкий магазин "GllacyShop"</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="100" height="50" alt="Логотип магазина GllacyShop">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="catalog">Каталог</a></li>
+          <li><a href="delivery-payment">Доставка и оплата</a></li>
+          <li><a href="about">О Компании</a></li>
+        </ul>
+        <!-- Не совсем уверен в правильности отображения в разметке навигации пользователя -->
+        <form class="user-navigation">
+          <button class="search-button"></button>
+          <button class="login-button">Вход</button>
+          <button class="basket-button">Пусто</button>
+          <!--я понимаю, что "пусто" должно быть написано только
+           при определенных условиях, но пока так сойдет? upd. как мне запихать
+         placeholder="пусто" лучше? -->
+        </form>
+        <section class="work-time">
+          <p>С 10 до 20, ежедневно <br>
+            8 812 450-25-25
+          </p>
+        </section>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
+      <section class="preview">
+        <!-- Стоит ли добавлять изображение мороженого
+        как контент или же оставить в виде фона? -->
+        <h2 class="preview-message">Крем-брюле и пломбир с малиновым джемом</h2>
+        <a class="preview-button" href="item.html">Давайте оба!</a>
+        <form class="preview-slider">
+          <input type="checkbox" id="preview-1" checked>
+          <input type="checkbox" id="preview-2">
+          <input type="checkbox" id="preview-3">
+        </form>
+      </section>
+      <section class="special-offer">
+        <h2 class="offering">Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим<br>
+            в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="offering-button" href="offer.html">Хочу варенье!</a>
+        <h2 class="offering">Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
+            вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="offering-button" href="offer.html">Хочу шоколадки!</a>
+      </section>
+      <section class="popular">
+        <h2 class="visually-hidden">Популярное мороженое</h2>
+          <ul class="popular-list">
+            <li class="popular-item">
+              <a href="popular-item.html">Сливочное с апельсиновым<br>
+                джемом и цитрусовой стружкой</a>
+              <img src="img/icecream.jpg" width="100" height="100" alt="Сливочное с апельсиновым
+                джемом и цитрусовой стружкой">
+              <img src="img/hit.jpg" width="10" height="10" alt="ХИТ">
+              <span class="price">310Р</span>
+              <span class="weight">кг</span>
+            </li>
+            <li class="popular-item">
+              <a href="popular-item.html">Сливочно-кофейное с кусочками<br>
+                шоколада</a>
+              <img src="img/icecream.jpg" width="100" height="100" alt="Сливочно-кофейное с кусочками
+                  шоколада">
+              <img src="img/hit.jpg" width="10" height="10" alt="ХИТ">
+              <span class="price">380Р</span>
+              <span class="weight">кг</span>
+            </li>
+            <li class="popular-item">
+              <a href="popular-item.html">Сливочно-клубничное с<br>
+                присыпкой из белого шоколада</a>
+              <img src="img/icecream.jpg" width="100" height="100" alt="Сливочно-клубничное с присыпкой
+              из белого шоколада">
+              <img src="img/hit.jpg" width="10" height="10" alt="ХИТ">
+              <span class="price">355Р</span>
+              <span class="weight">кг</span>
+            </li>
+            <li class="popular-item">
+              <a href="popular-item.html">Сливочное крем-брюле с<br>
+                карамельной подливкой</a>
+              <img src="img/icecream.jpg" width="100" height="100" alt="Сливочное крем-брюле с
+                карамельной подливкой">
+              <img src="img/hit.jpg" width="10" height="10" alt="ХИТ">
+              <span class="price">415Р</span>
+              <span class="weight">кг</span>
+            </li>
+          </ul>
+      </section>
+      <section class="info">
+        <h3 class="info-text">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного<br>
+          производства на развес</h3>
+        <p class="info-contents">Все наше мороженое изготавливается на собственном<br>
+          <!-- Как избавиться от этих <br> постоянных? -->
+          производстве, с использованием современного оборудования<br>
+          и проверенных временем технологий.</p>
+        <p class="info-contents">Для приготовления мороженого используется настоящие<br>
+          сливки и молоко высочайшего качества. Все дополнительные<br>
+          ингредиенты и добавки произведены из натурального,<br>
+          экологически чистого сырья.</p>
+        <p class="info-contents">Закупка ингредиентов производится только у проверенных<br>
+          фермерских хозяйств и компаний, с которыми нас связывает<br>
+          долговременное сотрудничество.</p>
+        <p class="info-contents">Доставка нашего мороженого до заказчиков осуществляется<br>
+          в специальном термопаке, который не дает мороженому<br>
+          растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </section>
+      <article class="blog">
+        <p class="info-contents">Новое в нашем блоге</p>
+        <a href="blog.html"><b>10 способов сервировки
+          фруктовых щербетов к столу</b></a>
+      </article>
+      <section class="subscribe">
+        <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+          всего самого вкусного, что у нас происходит. Обещаем не спамить
+          и не слать всякой ненужной ерунды. Честно =)</p>
+        <!-- И снова я не уверен, правильно ли я сделал форму -->
+        <form action="https://subscribe.gllacy.ru" method="post">
+          <input type="text" placeholder="Электронная почта" name="email" required>
+          <button type="submit" class="signupbtn">Отправить</button>
+        </form>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>Адрес главного офиса и офлайн магазина:</p>
+        <p class="contacts"><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+        <p>Для заказов по телефону:</p>
+        <p class="contacts">8 812 450-25-25</p>
+        <p>(с 10 до 20 ежедневно)</p>
+        <a class="feedback-button" href="feedback.html">Форма обратной связи</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+      <div class="info">
+        <a href="suppliers.html"><b>Для поставщиков</b></a>
+        <a href="production.html">О производстве</a>
+        <a href="documents.html">Наши документы</a>
+        <a href="env-standards">Экологические стандарты</a>
+      </div>
+      <p class="footer-copyright">
+        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
+      </p>
+    </footer>
   </body>
 </html>
